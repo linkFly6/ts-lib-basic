@@ -71,20 +71,20 @@ app.use(middleware)
 
 ```bash
 # 一般启动
-$env:DEBUG='@didi/ts-lib-basic*';node app.js
+$env:DEBUG='ts-lib-basic*';node app.js
 # 或者
-DEBUG=@didi/ts-lib-basic* node app.js
+DEBUG=ts-lib-basic* node app.js
 
 
 # ts-node
-DEBUG=@didi/ts-lib-basic* ts-node app.ts
+DEBUG=ts-lib-basic* ts-node app.ts
 ```
 
 完整的 debug 命名空间参考：
 
 | 命名空间 | 说明 |
 | --- | --- |
-| @didi/ts-lib-basic:app | 应用程序基本调试信息打开 |
+| ts-lib-basic:app | 应用程序基本调试信息打开 |
 
 如果 debug 信息较大，debug 信息较大，需要过滤层次，请设置 [DEBUG_DEPTH](https://github.com/visionmedia/debug#environment-variables)。
 
