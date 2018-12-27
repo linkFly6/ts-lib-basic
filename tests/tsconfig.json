@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "removeComments": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      // ~/ 指向 server/types，types 目录下都是 types 文件，所以不会编译产出
+      "~/*": [
+        "../types/*"
+      ]
+    },
+    "target": "es6",
+  },
+  "include": [
+    "../src/**/*",
+    "../types/**/*"
+  ],
+}

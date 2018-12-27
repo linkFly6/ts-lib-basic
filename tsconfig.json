@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    // "removeComments": true,
+    "types": [
+      "node",
+    ],
+    "baseUrl": ".",
+    "paths": {
+      // ~/ 指向 server/types，types 目录下都是 types 文件，所以不会编译产出
+      "~/*": [
+        "./types/*"
+      ]
+    },
+    "target": "es6",
+    "outDir": "dist",
+    // "declaration": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+}

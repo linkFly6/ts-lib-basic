@@ -1,0 +1,56 @@
+{
+  "name": "ts-lib-basic",
+  "text": "快速基于 TypeScript 编写一个库",
+  "version": "1.0.0",
+  "description": "集成了基础工具的，使用 TypeScript 快速编写一个应用库",
+  "author": "linkFly <linkFly6@live.com>",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:w": "DEBUG=ts-lib-basic* jest --watch --collectCoverage=false",
+    "test:e": "DEBUG=ts-lib-basic* ts-node --project tests/tsconfig.json tests/app.ts",
+    "build": "rm -rf ./dist && tsc",
+    "build:w": "rm -r ./dist && tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:linkFly6/ts-lib-basic.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.31",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/supertest": "^2.0.7",
+    "express": "^4.16.4",
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "jest": {
+    "rootDir": "tests",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
