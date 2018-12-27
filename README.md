@@ -90,6 +90,25 @@ DEBUG=@didi/ts-lib-basic* ts-node app.ts
 
 ## 开发和编译
 
+项目目录结构：
+
+```bash
+.
+├── .vscode           # vscode 配置
+│   └── launch.json   # vscode 调试配置
+├── dist              # 编译产出目录，编译后才有
+├── src               # 源码
+├── tests             # 单元测试
+├── .gitignore        # git 忽略文件
+├── .npmrc            # npm 配置
+├── LICENSE           # 开源协议
+├── README.md         # README
+├── package-lock.json # npm 锁定依赖
+├── package.json      # npm
+├── tsconfig.json     # typescript 配置
+└── tslint.json       # tslint 校验
+```
+
 提供了多个编译脚本。
 
 ### 构建
