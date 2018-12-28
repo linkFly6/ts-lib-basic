@@ -1,6 +1,10 @@
 # ts-lib-basic
 
-使用 TypeScript 快速编写一个应用库，提供了一套基础项目骨架目录，集成了基础工具（涵盖编译、测试）。
+使用 TypeScript 快速编写一个应用库，提供了一套基础项目骨架目录，集成了基础工具（编译、测试、文档托管）。[https://linkfly6.github.io/ts-lib-basic/](https://linkfly6.github.io/ts-lib-basic/)。
+
+将本仓库 clone 到本地，可作为一个新的库骨架。
+
+更多细节请参考博客 《[写一个完整的 JavaScript 库](https://tasaid.com/blog/2018122819513079.html)》。
 
 ----
 
@@ -101,6 +105,7 @@ DEBUG=ts-lib-basic* ts-node app.ts
 ├── tests             # 单元测试
 ├── .gitignore        # git 忽略文件
 ├── .npmrc            # npm 配置
+├── .travis.yml       # 持续集成
 ├── LICENSE           # 开源协议
 ├── README.md         # README
 ├── package-lock.json # npm 锁定依赖
@@ -141,12 +146,35 @@ npm run test:e
 - `npm run test:e` 运行 `test/app.ts`，直接运行程序
 - 使用 vscode：`调试` => `启动调试(F5)`，支持断点
 
+
+## 文档
+
+在 `docs/` 文件夹下直接写 Markdown 文件即可。文档使用 [VuePress](https://vuepress.vuejs.org/zh/) 进行编译。执行 `npm run docs` 可以实时预览文档。
+
+执行 `npm run docs:build` 可以编译产出最新文档，提交到 Github。
+
+点击项目 `Setting` 中，在 GitHub Pages 中，将 **Source** 修改为 **master branch/docs folder**（选择 docs/ 作为目录）。
+
+然后访问 `https://<USERNAME or GROUP>.gitlab.io/<REPO>/` 即可。
+
+## 持续集成
+
+默认配置了在 master 代码提交的时候自动执行 `npm run test`。
+
+在 [travis-ci](https://travis-ci.org/) 可以打开持续集成服务。
+
+
+----
+
+更多细节请参考博客 《[写一个完整的 JavaScript 库](https://tasaid.com/blog/2018122819513079.html)》。
+
+
 ## Release history
 
 ### 2018-12-27 1.0.0
 
 正式发布
 
-- [feature]初始化项目骨架
-- [feature]初始化测试脚本
-- [bugfix]xx bug(#0) 修复
+- [feature] 初始化项目骨架
+- [feature] 初始化测试脚本
+- [bugfix] xx bug(#0) 修复
