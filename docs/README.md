@@ -8,7 +8,7 @@ features:
 - title: 快速
   details: 快速创建库
 - title: 集成
-  details: 集成单元测试和 docs
+  details: 集成单元测试和自动化 doc 部署
 - title: TypeScript
   details: TypeScript 支持
 ---
