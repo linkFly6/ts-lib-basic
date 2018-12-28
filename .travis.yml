@@ -13,4 +13,5 @@ branches:
 
 script:
   # 自动部署 docs
-  - npm run docs:build
+  # - npm run docs:build
+  npm run test
