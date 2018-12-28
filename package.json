@@ -12,7 +12,7 @@
     "test:e": "DEBUG=ts-lib-basic* ts-node --project tests/tsconfig.json tests/app.ts",
     "build": "rm -rf ./dist && tsc",
     "docs": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs && cp -rf ./docs/.vuepress/dist/* ./docs && rm -r ./docs/.vuepress/dist",
     "build:w": "rm -r ./dist && tsc -w"
   },
   "repository": {
