@@ -45,7 +45,6 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "collectCoverage": true,
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
       "ts",
