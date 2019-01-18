@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 actionText: 开始使用 →
-actionLink: /guide/introduce
+actionLink: https://github.com/linkFly6/ts-lib-basic
 footer: MIT Licensed | Copyright © 2018-present linkFly
 features:
 - title: 快速
