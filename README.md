@@ -171,6 +171,10 @@ npm run test:e
 
 ## Release history
 
+### 2019-07-29 1.1.0
+
+- [feature] 加入 `git commit` 规范
+
 ### 2018-12-27 1.0.0
 
 正式发布
